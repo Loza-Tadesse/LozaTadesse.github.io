@@ -1,0 +1,20 @@
+/* Minimal custom styles to keep the UI calm and readable */
+
+/* Bring back simple bullets where needed */
+ul.bulleted {
+  list-style: disc;
+  margin-left: 1.25rem;
+}
+
+ul.bulleted li { margin: 0.25rem 0; }
+
+/* Section spacing tweaks */
+#education.post h3 { margin-top: 0; }
+
+/* Compact project articles for easier scanning */
+#ml-projects article p {
+  margin-bottom: 1rem;
+}
+
+/* Small helper for subtle dividers (if needed later) */
+.hr-soft { border-bottom: 1px solid #eeeeee; margin: 2rem 0; }

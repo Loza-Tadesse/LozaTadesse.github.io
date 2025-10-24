@@ -5,9 +5,10 @@
 		<title>Loza Tadesse Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- Modern Fonts -->
+		<!-- Modern Fonts (optional) -->
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/loza.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -33,7 +34,9 @@
 				<!-- Navigation -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
+							<li class="active"><a href="#ml-projects" class="scrolly">Portfolio</a></li>
+							<li><a href="#education" class="scrolly">Education</a></li>
+							<li><a href="#personal-projects" class="scrolly">Personal Projects</a></li>
 							<li><a href="generic.html">Resume</a></li>
 						</ul>
 						<ul class="icons">
@@ -57,23 +60,15 @@
 							</article>
 
 						<!-- Featured ML Projects -->
-							<section class="posts" id="ml-projects">
+								<section class="posts" id="ml-projects">
 								<article>
 									<header>
 										<span class="date">RAG & LLM Application</span>
 										<h2><a href="#">Ragify - AI Study Guide Assistant</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/personal-loan.png" alt="" /></a>
-									<p><strong>Technologies:</strong> Python, LangChain, RAG (Retrieval-Augmented Generation), Large Language Models, Vector Databases, PDF Processing</p>
-									<p>Developed an intelligent study guide application leveraging RAG (Retrieval-Augmented Generation) technology and Large Language Models. Ragify enables users to upload PDF documents and ask natural language questions about the content, receiving accurate, context-aware answers. The system combines document parsing, semantic search, and LLM-powered question answering to create an interactive learning experience.</p>
-									<p><strong>Key Features:</strong></p>
-									<ul>
-										<li>PDF document ingestion and text extraction</li>
-										<li>Vector database for semantic document search</li>
-										<li>RAG pipeline for context-aware responses</li>
-										<li>Natural language question-answering interface</li>
-										<li>Accurate information retrieval from source documents</li>
-									</ul>
+										<p>Upload a PDF and ask questions. Ragify retrieves the right passages and answers with an LLM using a RAG pipeline.</p>
+										<p><strong>Tech:</strong> Python, LangChain, Vector DB, PDF parsing</p>
 									<ul class="actions special">
 										<li><a href="#" class="button icon brands fa-github">View on GitHub</a></li>
 									</ul>
@@ -85,16 +80,8 @@
 										<h2><a href="#">SolPredict AI - Solana Price Predictor</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/movie.png" alt="" /></a>
-									<p><strong>Technologies:</strong> Python, Random Forest, LSTM (Long Short-Term Memory), TensorFlow/Keras, Scikit-learn, Pandas, Time Series Analysis</p>
-									<p>Built a sophisticated cryptocurrency price prediction system combining Random Forest and LSTM neural networks to forecast Solana (SOL) prices. The hybrid model leverages both traditional machine learning and deep learning approaches to capture complex patterns in cryptocurrency market data. Implemented advanced feature engineering and time series analysis for improved prediction accuracy.</p>
-									<p><strong>Technical Highlights:</strong></p>
-									<ul>
-										<li>Hybrid Random Forest + LSTM architecture</li>
-										<li>Time series data preprocessing and feature engineering</li>
-										<li>Historical price pattern analysis</li>
-										<li>Model evaluation with multiple metrics (RMSE, MAE)</li>
-										<li>Real-time prediction capability</li>
-									</ul>
+									<p>Hybrid Random Forest + LSTM model to forecast Solana (SOL) prices from historical market data.</p>
+									<p><strong>Tech:</strong> Python, scikit-learn, TensorFlow/Keras, Pandas</p>
 									<ul class="actions special">
 										<li><a href="#" class="button icon brands fa-github">View on GitHub</a></li>
 									</ul>
@@ -106,25 +93,40 @@
 										<h2><a href="#">HotSpot-Predictor - Restaurant & Bar Traffic Forecasting</a></h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/SRIPoster.jpg" alt="" /></a>
-									<p><strong>Technologies:</strong> Python, Machine Learning, Classification Algorithms, Scikit-learn, Feature Engineering, Data Analytics</p>
-									<p>Developed a machine learning model to predict whether restaurants and bars will become popular hotspots based on various features including location data, demographics, amenities, and historical traffic patterns. The predictive model helps business owners and investors make data-driven decisions about venue selection and marketing strategies.</p>
-									<p><strong>Project Highlights:</strong></p>
-									<ul>
-										<li>Multi-feature classification model</li>
-										<li>Location-based analytics and demographic analysis</li>
-										<li>Feature importance ranking for business insights</li>
-										<li>Model comparison (Logistic Regression, Random Forest, XGBoost)</li>
-										<li>Actionable predictions for business strategy</li>
-									</ul>
+									<p>Classifies venues that are likely to become hotspots using location, demographic, and historical traffic features.</p>
+									<p><strong>Tech:</strong> Python, scikit-learn, feature engineering</p>
 									<ul class="actions special">
 										<li><a href="#" class="button icon brands fa-github">View on GitHub</a></li>
 									</ul>
 								</article>
 							</section>
 
-							<!-- Additional Projects -->
-							<header class="major">
-								<h2>Additional Projects</h2>
+							<!-- Education & Certifications -->
+							<section id="education" class="post">
+								<header class="major">
+									<h2>Education & Certifications</h2>
+								</header>
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-6">
+										<h3>Education</h3>
+										<ul class="bulleted">
+											<li>B.S. in Computer Science — Dakota State University</li>
+											<li>M.S. in Data Science — Marymount University</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<h3>Certifications</h3>
+										<ul class="bulleted">
+											<li>AWS Certified Cloud Practitioner</li>
+											<li>AWS Certified Machine Learning — Specialty (in progress)</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+							<!-- Personal Projects -->
+							<header class="major" id="personal-projects">
+								<h2>Personal Projects</h2>
 							</header>
 							<section class="posts">
 								<article>
