@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">SolPredict AI illustration</title>
+  <desc id="desc">Neon trading terminals with LSTM forecast overlay.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1320" />
+      <stop offset="100%" stop-color="#05070f" />
+    </linearGradient>
+    <linearGradient id="plasma" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9a9e" />
+      <stop offset="45%" stop-color="#fad0c4" />
+      <stop offset="100%" stop-color="#fad0c4" />
+    </linearGradient>
+    <linearGradient id="curve" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8affd1" />
+      <stop offset="50%" stop-color="#63c6ff" />
+      <stop offset="100%" stop-color="#ffafbd" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#bg)" />
+  <g opacity="0.32" stroke="#1f2a45" stroke-width="2">
+    <path d="M64 104h544" />
+    <path d="M64 152h544" />
+    <path d="M64 200h544" />
+    <path d="M64 248h544" />
+    <path d="M64 296h544" />
+  </g>
+  <g>
+    <rect x="94" y="96" width="452" height="224" rx="26" fill="#0f1a2b" stroke="#283a52" stroke-width="3" />
+    <g>
+      <rect x="122" y="126" width="396" height="164" rx="18" fill="#070c18" stroke="#202c43" stroke-width="2" />
+      <polyline points="132,262 168,238 214,270 256,208 296,224 344,150 386,192 428,134 468,170 508,126" fill="none" stroke="url(#curve)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M168 224c14 0 26-12 26-26s-12-26-26-26-26 12-26 26 12 26 26 26z" fill="#63c6ff" opacity="0.32" />
+      <path d="M344 186c12 0 22-10 22-22s-10-22-22-22-22 10-22 22 10 22 22 22z" fill="#ff9a9e" opacity="0.28" />
+      <path d="M428 170c10 0 18-8 18-18s-8-18-18-18-18 8-18 18 8 18 18 18z" fill="#8affd1" opacity="0.32" />
+    </g>
+    <rect x="122" y="310" width="92" height="18" rx="9" fill="#141f32" />
+    <rect x="226" y="310" width="64" height="18" rx="9" fill="#141f32" />
+    <rect x="302" y="310" width="74" height="18" rx="9" fill="#141f32" />
+    <rect x="390" y="310" width="104" height="18" rx="9" fill="url(#plasma)" />
+    <rect x="510" y="310" width="36" height="18" rx="9" fill="#141f32" />
+  </g>
+  <g>
+    <rect x="114" y="72" width="168" height="28" rx="14" fill="#121d30" />
+    <rect x="302" y="72" width="112" height="28" rx="14" fill="#121d30" />
+    <rect x="434" y="72" width="92" height="28" rx="14" fill="#121d30" />
+    <circle cx="140" cy="86" r="6" fill="#ff9a9e" />
+    <circle cx="158" cy="86" r="6" fill="#63c6ff" />
+    <circle cx="176" cy="86" r="6" fill="#8affd1" />
+  </g>
+  <g>
+    <rect x="178" y="334" width="284" height="22" rx="11" fill="#121d30" />
+    <rect x="240" y="358" width="160" height="16" rx="8" fill="#121d30" />
+  </g>
+  <g opacity="0.72" stroke="#283a52" stroke-width="2">
+    <path d="M96 360h28" />
+    <path d="M516 360h32" />
+  </g>
+</svg>

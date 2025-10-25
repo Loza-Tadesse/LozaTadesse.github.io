@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Arlington Parking Predict illustration</title>
+  <desc id="desc">Parking garage display highlighting occupancy and forecast trend.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1e2d" />
+      <stop offset="100%" stop-color="#12263f" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#89f7fe" />
+      <stop offset="100%" stop-color="#66a6ff" />
+    </linearGradient>
+    <linearGradient id="warning" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb347" />
+      <stop offset="100%" stop-color="#ff5f6d" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#bg)" />
+  <g fill="none" stroke="#1f425c" stroke-width="2" opacity="0.6">
+    <path d="M72 86h80" />
+    <path d="M72 116h56" />
+    <path d="M488 92h84" />
+    <path d="M488 122h96" />
+    <path d="M488 152h72" />
+  </g>
+  <g>
+    <rect x="90" y="108" width="200" height="220" rx="24" fill="#0f1f31" stroke="#1f425c" stroke-width="3" />
+    <rect x="112" y="142" width="156" height="48" rx="12" fill="#132b44" />
+    <text x="132" y="172" font-family="'Space Grotesk', sans-serif" font-size="28" font-weight="700" fill="#89f7fe">P</text>
+    <rect x="112" y="206" width="156" height="20" rx="10" fill="#132b44" />
+    <rect x="112" y="238" width="120" height="20" rx="10" fill="#132b44" opacity="0.6" />
+    <rect x="112" y="270" width="156" height="48" rx="12" fill="#132b44" />
+    <text x="128" y="302" font-family="'Manrope', sans-serif" font-size="18" fill="#66a6ff">Forecast: 68% full</text>
+    <circle cx="260" cy="130" r="18" fill="#66a6ff" />
+  </g>
+  <g>
+    <rect x="300" y="86" width="260" height="248" rx="26" fill="#0f1f31" stroke="#1f425c" stroke-width="3" />
+    <rect x="328" y="118" width="204" height="28" rx="14" fill="#132b44" />
+    <rect x="328" y="160" width="204" height="160" rx="18" fill="#101a2a" stroke="#1f425c" stroke-width="2" />
+    <polyline points="344,292 392,252 430,270 468,210 512,236" fill="none" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M344 252h44" stroke="#1f425c" stroke-width="2" />
+    <path d="M344 228h28" stroke="#1f425c" stroke-width="2" />
+    <rect x="344" y="184" width="32" height="12" rx="6" fill="#132b44" />
+    <rect x="500" y="188" width="24" height="24" rx="6" fill="#132b44" />
+    <rect x="344" y="312" width="68" height="18" rx="9" fill="#132b44" />
+    <rect x="420" y="312" width="48" height="18" rx="9" fill="url(#warning)" />
+    <rect x="472" y="312" width="48" height="18" rx="9" fill="#132b44" opacity="0.6" />
+  </g>
+  <g opacity="0.88">
+    <rect x="130" y="92" width="116" height="32" rx="12" fill="#132b44" />
+    <rect x="130" y="72" width="84" height="12" rx="6" fill="#132b44" opacity="0.7" />
+  </g>
+  <g>
+    <path d="M140 340c40-42 84-62 130-56 46 6 96 46 144 38s84-60 116-88" fill="none" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" />
+  </g>
+</svg>
