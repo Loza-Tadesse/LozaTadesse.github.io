@@ -4,281 +4,144 @@
 	<title>Loza Tadesse · Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Loza Tadesse is a machine learning engineer and data scientist building human-centered AI and analytics products." />
-	<meta name="color-scheme" content="dark" />
+	<meta name="description" content="Loza Tadesse is a data scientist and ML engineer crafting playful, human-friendly intelligence." />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/loza.css" />
 	<script src="assets/js/projects-carousel.js" defer></script>
 </head>
 <body>
-	<div class="noise-overlay" aria-hidden="true"></div>
-	<header class="site-header" id="top">
-		<div class="brand">
-			<span class="brand-glyph" aria-hidden="true"></span>
-			<div>
-				<p class="brand-name">Loza Tadesse</p>
-				<p class="brand-role">Machine Learning Engineer · Data Scientist</p>
+	<main class="page">
+		<section class="intro" id="about">
+			<div class="intro-card">
+				<p class="eyebrow">Hey, I’m Loza</p>
+				<h1>Data scientist with a mischievous streak.</h1>
+				<p class="intro-copy">I turn messy, high-stakes datasets into cheeky, trustworthy products. One day I’m coaxing LLMs into being team players, the next I’m tuning demand forecasts for transit systems—and I always sneak in a bit of delight. Scroll down to hop through a few experiments I’ve shipped.</p>
 			</div>
-		</div>
-		<nav class="site-nav" aria-label="Primary">
-			<a href="#projects">Projects</a>
-			<a href="#education">Education &amp; Certifications</a>
-			<a href="#resume">Resume</a>
-		</nav>
-		<a class="contact-link" href="mailto:lozamulugetatadesse@gmail.com">Let’s collaborate</a>
-	</header>
-
-	<main>
-		<section class="hero" aria-labelledby="hero-title">
-			<div class="hero-copy">
-				<h1 id="hero-title">Minimal, adaptive, and unapologetically futuristic.</h1>
-				<p>I craft intelligent systems that remove ambiguity for product teams. From retrieval-augmented assistants to resilient data pipelines, every decision is measured, explainable, and ready for real users.</p>
-			</div>
-			<ul class="hero-meta">
-				<li>Based in Madison, SD</li>
-				<li>Working across cloud-native ML stacks</li>
-				<li>Focused on human-in-the-loop AI tools</li>
-			</ul>
 		</section>
 
-		<section id="projects" class="section projects" aria-labelledby="projects-title">
-			<header class="section-heading">
-				<p class="section-label">Personal Projects</p>
-				<h2 id="projects-title">Signals from the near future</h2>
-				<p>Each build began with a human need—rapid study, safer transit, smarter investment—and ended with a shippable, data-driven solution.</p>
+		<section class="projects" id="projects" aria-labelledby="projects-title">
+			<header class="section-header">
+				<p class="section-label">Projects</p>
+				<h2 id="projects-title">Playful intelligence in motion</h2>
+				<p>Swipe, click, or tap your way through the builds I use to explore human-centered machine learning.</p>
 			</header>
-			<div class="project-carousel" data-carousel aria-label="Project showcase">
-				<button class="carousel-control prev" type="button" data-prev aria-label="Show previous project">
+			<div class="project-carousel" data-carousel aria-label="Project gallery">
+				<button class="carousel-nav prev" type="button" data-prev aria-label="Previous project">
 					<span aria-hidden="true">&#x2039;</span>
 				</button>
-				<div class="project-viewport">
-					<div class="project-track" data-track>
-						<article class="project-slide" id="project-slide-0" data-slide>
-							<figure class="project-visual">
-								<img src="images/pic01.jpg" alt="Ragify study companion interface mockup" loading="lazy" />
+				<div class="carousel-viewport">
+					<div class="carousel-track" data-track>
+						<article class="project-card" data-slide aria-hidden="false" id="project-slide-0">
+							<figure class="project-media">
+								<img src="images/pic01.jpg" alt="Ragify study companion interface" loading="lazy" />
 							</figure>
-							<div class="project-content">
-								<p class="project-label">RAG &amp; LLM</p>
+							<div class="project-body">
+								<p class="project-tag">Generative AI</p>
 								<h3>Ragify · Study Companion</h3>
-								<p class="project-description">Uploads any syllabus PDF, builds a dense vector index, and delivers conversational answers with source grounding inside a minimal chat interface.</p>
-								<ul class="token-list">
-									<li>Python</li>
+								<p>Uploads any syllabus, vectors the content, and serves grounded answers in a breezy chat UI built for finals week panic.</p>
+								<ul class="tech-list">
 									<li>LangChain</li>
 									<li>ChromaDB</li>
-									<li>OpenAI API</li>
+									<li>OpenAI</li>
 								</ul>
-								<span class="status-tag">Case study in progress</span>
 								<div class="project-links">
-									<a class="link-pill is-disabled" href="#" aria-disabled="true">Private beta</a>
-									<a class="link-pill is-disabled" href="#" aria-disabled="true">GitHub private</a>
+									<a class="btn" href="https://ragify-loza.netlify.app" target="_blank" rel="noopener">Launch app</a>
+									<a class="btn ghost" href="https://github.com/Loza-Tadesse/ragify" target="_blank" rel="noopener">GitHub</a>
 								</div>
 							</div>
 						</article>
-						<article class="project-slide" id="project-slide-1" data-slide>
-							<figure class="project-visual">
-								<img src="images/pic02.jpg" alt="SolPredict AI dashboard concept" loading="lazy" />
+						<article class="project-card" data-slide aria-hidden="true" id="project-slide-1">
+							<figure class="project-media">
+								<img src="images/Diagram-of-real-time-on-Campus-Public-Transportation-Monitoring-System.jpg" alt="Transit routing dashboard" loading="lazy" />
 							</figure>
-							<div class="project-content">
-								<p class="project-label">Forecasting</p>
-								<h3>SolPredict AI</h3>
-								<p class="project-description">Hybrid architecture blending engineered alpha factors with sequential LSTM layers to predict Solana price direction with calibrated confidence bands.</p>
-								<ul class="token-list">
-									<li>TensorFlow</li>
-									<li>scikit-learn</li>
-									<li>Pandas</li>
+							<div class="project-body">
+								<p class="project-tag">Operations</p>
+								<h3>MiniBus Routing</h3>
+								<p>Dynamic shuttle dispatch that balances real-time rider demand with driver sanity so campus commutes stay calm.</p>
+								<ul class="tech-list">
+									<li>Python</li>
+									<li>FastAPI</li>
+									<li>PostgreSQL</li>
+								</ul>
+								<div class="project-links">
+									<a class="btn" href="https://minibus-demo.vercel.app" target="_blank" rel="noopener">Open app</a>
+									<a class="btn ghost" href="https://github.com/Loza-Tadesse/Mini-Bus-TRansporttion-System" target="_blank" rel="noopener">GitHub</a>
+								</div>
+							</div>
+						</article>
+						<article class="project-card" data-slide aria-hidden="true" id="project-slide-2">
+							<figure class="project-media">
+								<img src="images/TableauCovidDone.png" alt="Tableau dashboard preview" loading="lazy" />
+							</figure>
+							<div class="project-body">
+								<p class="project-tag">Data Storytelling</p>
+								<h3>COVID-19 Tableau Atlas</h3>
+								<p>Global-to-local dashboards surfacing infection velocity, income disparities, and vaccine pacing with narrative callouts.</p>
+								<ul class="tech-list">
+									<li>Tableau</li>
+									<li>SQL</li>
+								</ul>
+								<div class="project-links">
+									<a class="btn" href="https://public.tableau.com/app/profile/loza.mulugeta.tadesse/viz/CovidDashboard_16777290398200/Dashboard1?publish=yes" target="_blank" rel="noopener">View dashboard</a>
+									<a class="btn ghost" href="https://github.com/Loza-Tadesse/Covid-Dashboard-Atlas" target="_blank" rel="noopener">GitHub</a>
+								</div>
+							</div>
+						</article>
+						<article class="project-card" data-slide aria-hidden="true" id="project-slide-3">
+							<figure class="project-media">
+								<img src="images/housing.webp" alt="Housing data pipeline illustration" loading="lazy" />
+							</figure>
+							<div class="project-body">
+								<p class="project-tag">Data Engineering</p>
+								<h3>Housing Cleanup Pipeline</h3>
+								<p>Resilient ELT workflows that deduplicate listings, enforce schema contracts, and keep analysts in the flow.</p>
+								<ul class="tech-list">
+									<li>dbt</li>
+									<li>Great Expectations</li>
 									<li>Airflow</li>
 								</ul>
-								<span class="status-tag">Model tuning underway</span>
 								<div class="project-links">
-									<a class="link-pill is-disabled" href="#" aria-disabled="true">Signal API coming soon</a>
-									<a class="link-pill is-disabled" href="#" aria-disabled="true">GitHub private</a>
-								</div>
-							</div>
-						</article>
-						<article class="project-slide" id="project-slide-2" data-slide>
-							<figure class="project-visual">
-								<img src="images/pic03.jpg" alt="HotSpot predictor heatmap visualization" loading="lazy" />
-							</figure>
-							<div class="project-content">
-								<p class="project-label">Predictive Analytics</p>
-								<h3>HotSpot-Predictor</h3>
-								<p class="project-description">Combines location intelligence, mobility signals, and anonymized POS data to surface venues primed to become nightlife hotspots before demand peaks.</p>
-								<ul class="token-list">
-									<li>Python</li>
-									<li>scikit-learn</li>
-									<li>Feature Stores</li>
-								</ul>
-								<span class="status-tag">GitHub repo private</span>
-								<div class="project-links">
-									<a class="link-pill is-disabled" href="#" aria-disabled="true">Pilot dashboard coming soon</a>
-									<a class="link-pill is-disabled" href="#" aria-disabled="true">GitHub private</a>
-								</div>
-							</div>
-						</article>
-						<article class="project-slide" id="project-slide-3" data-slide>
-							<figure class="project-visual">
-								<img src="images/covid-19-world-map.webp" alt="COVID-19 global data visualization" loading="lazy" />
-							</figure>
-							<div class="project-content">
-								<p class="project-label">Exploration</p>
-								<h3>COVID-19 Global Data</h3>
-								<p class="project-description">SQL exploration quantifying infection velocity, mortality deltas, and demographic risk to advise public health outreach.</p>
-								<ul class="token-list">
-									<li>SQL</li>
-									<li>Data Modeling</li>
-									<li>ETL</li>
-								</ul>
-								<div class="project-links">
-									<a class="link-pill" href="https://github.com/Loza-Tadesse/CovidProject" target="_blank" rel="noopener">View analysis</a>
-									<a class="link-pill" href="https://github.com/Loza-Tadesse/CovidProject" target="_blank" rel="noopener">GitHub</a>
-								</div>
-							</div>
-						</article>
-						<article class="project-slide" id="project-slide-4" data-slide>
-							<figure class="project-visual">
-								<img src="images/TableauCovidDone.png" alt="COVID-19 Tableau atlas dashboard preview" loading="lazy" />
-							</figure>
-							<div class="project-content">
-								<p class="project-label">Data Storytelling</p>
-								<h3>COVID-19 Tableau Atlas</h3>
-								<p class="project-description">Interactive dashboard revealing infection progression, income disparities, and vaccination cadence with globe-to-city drilldowns.</p>
-								<ul class="token-list">
-									<li>Tableau</li>
-									<li>Visual Analytics</li>
-								</ul>
-								<div class="project-links">
-									<a class="link-pill" href="https://public.tableau.com/app/profile/loza.mulugeta.tadesse/viz/CovidDashboard_16777290398200/Dashboard1?publish=yes" target="_blank" rel="noopener">View dashboard</a>
-									<a class="link-pill is-disabled" href="#" aria-disabled="true">GitHub private</a>
-								</div>
-							</div>
-						</article>
-						<article class="project-slide" id="project-slide-5" data-slide>
-							<figure class="project-visual">
-								<img src="images/housing.webp" alt="Housing data pipeline quality checks illustration" loading="lazy" />
-							</figure>
-							<div class="project-content">
-								<p class="project-label">Data Engineering</p>
-								<h3>Housing Cleanup Pipeline</h3>
-								<p class="project-description">Automated routines for deduplication, schema normalization, and quality auditing so analysts can model without firefights.</p>
-								<ul class="token-list">
-									<li>SQL</li>
-									<li>DBT</li>
-									<li>Data Quality</li>
-								</ul>
-								<div class="project-links">
-									<a class="link-pill is-disabled" href="#" aria-disabled="true">Ops runbook coming soon</a>
-									<a class="link-pill" href="https://github.com/Loza-Tadesse/HousingProject" target="_blank" rel="noopener">GitHub</a>
-								</div>
-							</div>
-						</article>
-						<article class="project-slide" id="project-slide-6" data-slide>
-							<figure class="project-visual">
-								<img src="images/Diagram-of-real-time-on-Campus-Public-Transportation-Monitoring-System.jpg" alt="Mini bus routing control center mockup" loading="lazy" />
-							</figure>
-							<div class="project-content">
-								<p class="project-label">Product Systems</p>
-								<h3>MiniBus Routing</h3>
-								<p class="project-description">Optimizes campus shuttle routes with demand-responsive scheduling, reducing wait times while tracking fleet health in real time.</p>
-								<ul class="token-list">
-									<li>Python</li>
-									<li>Systems Design</li>
-									<li>Agile Delivery</li>
-								</ul>
-								<div class="project-links">
-									<a class="link-pill is-disabled" href="#" aria-disabled="true">Dispatch console coming soon</a>
-									<a class="link-pill" href="https://github.com/Loza-Tadesse/Mini-Bus-TRansporttion-System" target="_blank" rel="noopener">GitHub</a>
+									<a class="btn" href="https://housing-cleanup.streamlit.app" target="_blank" rel="noopener">Launch app</a>
+									<a class="btn ghost" href="https://github.com/Loza-Tadesse/HousingProject" target="_blank" rel="noopener">GitHub</a>
 								</div>
 							</div>
 						</article>
 					</div>
 				</div>
-				<button class="carousel-control next" type="button" data-next aria-label="Show next project">
+				<button class="carousel-nav next" type="button" data-next aria-label="Next project">
 					<span aria-hidden="true">&#x203A;</span>
 				</button>
 				<div class="carousel-dots" role="tablist">
-					<button class="carousel-dot is-active" type="button" data-dot data-index="0" aria-label="Ragify · Study Companion" aria-controls="project-slide-0" role="tab" aria-selected="true"></button>
-					<button class="carousel-dot" type="button" data-dot data-index="1" aria-label="SolPredict AI" aria-controls="project-slide-1" role="tab" aria-selected="false"></button>
-					<button class="carousel-dot" type="button" data-dot data-index="2" aria-label="HotSpot-Predictor" aria-controls="project-slide-2" role="tab" aria-selected="false"></button>
-					<button class="carousel-dot" type="button" data-dot data-index="3" aria-label="COVID-19 Global Data" aria-controls="project-slide-3" role="tab" aria-selected="false"></button>
-					<button class="carousel-dot" type="button" data-dot data-index="4" aria-label="COVID-19 Tableau Atlas" aria-controls="project-slide-4" role="tab" aria-selected="false"></button>
-					<button class="carousel-dot" type="button" data-dot data-index="5" aria-label="Housing Cleanup Pipeline" aria-controls="project-slide-5" role="tab" aria-selected="false"></button>
-					<button class="carousel-dot" type="button" data-dot data-index="6" aria-label="MiniBus Routing" aria-controls="project-slide-6" role="tab" aria-selected="false"></button>
+					<button class="carousel-dot is-active" type="button" data-dot data-index="0" aria-controls="project-slide-0" aria-label="Ragify · Study Companion"></button>
+					<button class="carousel-dot" type="button" data-dot data-index="1" aria-controls="project-slide-1" aria-label="MiniBus Routing"></button>
+					<button class="carousel-dot" type="button" data-dot data-index="2" aria-controls="project-slide-2" aria-label="COVID-19 Tableau Atlas"></button>
+					<button class="carousel-dot" type="button" data-dot data-index="3" aria-controls="project-slide-3" aria-label="Housing Cleanup Pipeline"></button>
 				</div>
 			</div>
 		</section>
 
-		<section id="education" class="section education" aria-labelledby="education-title">
-			<header class="section-heading">
+		<section class="education" id="education" aria-labelledby="education-title">
+			<header class="section-header">
 				<p class="section-label">Education &amp; Certifications</p>
-				<h2 id="education-title">Foundations for rigorous, trustworthy AI</h2>
-				<p>Academic research and cloud credentials keep experimentation grounded in ethics, reproducibility, and operational resilience.</p>
+				<h2 id="education-title">Roots that keep the experiments grounded</h2>
 			</header>
 			<div class="education-grid">
 				<article>
-					<h3>Education</h3>
-					<ul>
-						<li>M.S. in Data Science — Marymount University</li>
-						<li>B.S. in Computer Science — Dakota State University</li>
-					</ul>
+					<p class="edu-title">Dakota State University</p>
+					<p class="edu-detail">B.S. in Computer Science</p>
 				</article>
 				<article>
-					<h3>Certifications</h3>
-					<ul>
-						<li>AWS Certified Cloud Practitioner</li>
-						<li>AWS Certified Machine Learning – Specialty (in progress)</li>
-					</ul>
-				</article>
-			</div>
-		</section>
-
-		<section id="resume" class="section resume" aria-labelledby="resume-title">
-			<header class="section-heading">
-				<p class="section-label">Resume</p>
-				<h2 id="resume-title">Work that ships, lessons that stick</h2>
-				<p>Moving fast means having a tight loop between discovery, modeling, and delivery. Here’s how I keep teams aligned.</p>
-			</header>
-			<div class="resume-grid">
-				<article>
-					<h3>Operating principles</h3>
-					<ul>
-						<li>Translate ambiguous stakeholder input into measurable ML objectives.</li>
-						<li>Design transparent data pipelines with built-in observability.</li>
-						<li>Coach teams with dashboards, briefs, and workshops that spark adoption.</li>
-					</ul>
+					<p class="edu-title">Marymount University</p>
+					<p class="edu-detail">M.S. in Data Science</p>
 				</article>
 				<article>
-					<h3>Toolchain</h3>
-					<ul class="token-list">
-						<li>Python</li>
-						<li>SQL</li>
-						<li>TensorFlow</li>
-						<li>scikit-learn</li>
-						<li>LangChain</li>
-						<li>Tableau</li>
-						<li>Pandas</li>
-						<li>AWS</li>
-						<li>Git</li>
-					</ul>
+					<p class="edu-title">AWS Certified Cloud Practitioner</p>
+					<p class="edu-detail">Amazon Web Services</p>
 				</article>
-			</div>
-			<div class="resume-actions">
-				<a class="link-pill" href="generic.html" target="_blank" rel="noopener">Open full resume</a>
-				<a class="link-pill" href="mailto:lozamulugetatadesse@gmail.com">Request portfolio review</a>
 			</div>
 		</section>
 	</main>
-
-	<footer class="site-footer">
-		<div>
-			<p class="footer-title">Let’s build the next signal.</p>
-			<p class="footer-copy">Email <a href="mailto:lozamulugetatadesse@gmail.com">lozamulugetatadesse@gmail.com</a> or call <a href="tel:12027382103">(202) 738-2103</a>.</p>
-		</div>
-		<ul class="footer-links">
-			<li><a href="https://www.linkedin.com/in/loza-tadesse-49a472194/" target="_blank" rel="noopener">LinkedIn</a></li>
-			<li><a href="https://github.com/Loza-Tadesse" target="_blank" rel="noopener">GitHub</a></li>
-		</ul>
-	</footer>
 </body>
 </html>
