@@ -279,6 +279,205 @@ main {
   box-shadow: 0 22px 42px -32px rgba(236, 176, 195, 0.28);
 }
 
+/* Project carousel layout */
+.project-carousel {
+  position: relative;
+  display: grid;
+  gap: 20px;
+}
+
+.project-viewport {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  margin: 0 -8px;
+  padding: 8px 8px 24px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+.project-track::-webkit-scrollbar {
+  display: none;
+}
+
+.project-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: grid;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 24px;
+  border: 1px solid rgba(232, 206, 200, 0.7);
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 24px 60px -48px rgba(202, 157, 164, 0.32);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-slide[aria-hidden="false"],
+.project-slide.is-active {
+  border-color: var(--border-strong);
+  box-shadow: 0 26px 54px -34px rgba(236, 176, 195, 0.32);
+}
+
+.project-visual {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(244, 203, 213, 0.45) 0%, rgba(255, 255, 255, 0.8) 100%);
+  min-height: 220px;
+}
+
+.project-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(32, 22, 27, 0) 45%, rgba(32, 22, 27, 0.12) 100%);
+  mix-blend-mode: multiply;
+}
+
+.project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-content {
+  display: grid;
+  gap: 16px;
+}
+
+.project-description {
+  color: var(--text-muted);
+  font-size: 0.97rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.link-pill.is-disabled {
+  pointer-events: none;
+  border-style: dashed;
+  opacity: 0.58;
+  color: var(--text-muted);
+}
+
+.carousel-control,
+.carousel-dots {
+  display: none;
+}
+
+.project-carousel[data-enhanced="true"] .carousel-control {
+  display: inline-flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(232, 206, 200, 0.9);
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--text);
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 18px 36px -24px rgba(205, 164, 168, 0.42);
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.project-carousel[data-enhanced="true"] .carousel-control.prev {
+  left: 12px;
+}
+
+.project-carousel[data-enhanced="true"] .carousel-control.next {
+  right: 12px;
+}
+
+.project-carousel[data-enhanced="true"] .carousel-control:hover {
+  border-color: var(--border-strong);
+  color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(236, 176, 195, 0.22);
+}
+
+.project-carousel[data-enhanced="true"] .carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 4px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid rgba(232, 206, 200, 0.9);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dot.is-active,
+.carousel-dot:focus-visible {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.15);
+}
+
+.project-carousel[data-enhanced="true"] .project-track {
+  scrollbar-width: none;
+}
+
+@media (min-width: 880px) {
+  .project-slide {
+    grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+    align-items: center;
+  }
+
+  .project-visual {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 760px) {
+  .project-track {
+    gap: 18px;
+  }
+
+  .project-slide {
+    padding: 26px;
+  }
+
+  .project-visual {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .project-slide {
+    padding: 22px;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-carousel[data-enhanced="true"] .carousel-control {
+    display: none;
+  }
+}
+
 .project-label {
   font-size: 0.75rem;
   letter-spacing: 0.18em;

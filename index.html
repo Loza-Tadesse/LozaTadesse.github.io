@@ -10,6 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/loza.css" />
+	<script src="assets/js/projects-carousel.js" defer></script>
 </head>
 <body>
 	<div class="noise-overlay" aria-hidden="true"></div>
@@ -48,119 +49,163 @@
 				<h2 id="projects-title">Signals from the near future</h2>
 				<p>Each build began with a human need—rapid study, safer transit, smarter investment—and ended with a shippable, data-driven solution.</p>
 			</header>
-			<div class="project-grid">
-				<article class="project-card">
-					<header>
-						<p class="project-label">RAG &amp; LLM</p>
-						<h3>Ragify · Study Companion</h3>
-					</header>
-					<p>Uploads any syllabus PDF, builds a dense vector index, and delivers conversational answers with source grounding inside a minimal chat interface.</p>
-					<ul class="token-list">
-						<li>Python</li>
-						<li>LangChain</li>
-						<li>ChromaDB</li>
-						<li>OpenAI API</li>
-					</ul>
-					<footer>
-						<span class="status-tag">Case study in progress</span>
-					</footer>
-				</article>
-
-				<article class="project-card">
-					<header>
-						<p class="project-label">Forecasting</p>
-						<h3>SolPredict AI</h3>
-					</header>
-					<p>Hybrid architecture blending engineered alpha factors with sequential LSTM layers to predict Solana price direction with calibrated confidence bands.</p>
-					<ul class="token-list">
-						<li>TensorFlow</li>
-						<li>scikit-learn</li>
-						<li>Pandas</li>
-						<li>Airflow</li>
-					</ul>
-					<footer>
-						<span class="status-tag">Model tuning underway</span>
-					</footer>
-				</article>
-
-				<article class="project-card">
-					<header>
-						<p class="project-label">Predictive Analytics</p>
-						<h3>HotSpot-Predictor</h3>
-					</header>
-					<p>Combines location intelligence, mobility signals, and anonymized POS data to surface venues primed to become nightlife hotspots before demand peaks.</p>
-					<ul class="token-list">
-						<li>Python</li>
-						<li>scikit-learn</li>
-						<li>Feature Stores</li>
-					</ul>
-					<footer>
-						<span class="status-tag">GitHub repo private</span>
-					</footer>
-				</article>
-
-				<article class="project-card">
-					<header>
-						<p class="project-label">Exploration</p>
-						<h3>COVID-19 Global Data</h3>
-					</header>
-					<p>SQL exploration quantifying infection velocity, mortality deltas, and demographic risk to advise public health outreach.</p>
-					<ul class="token-list">
-						<li>SQL</li>
-						<li>Data Modeling</li>
-						<li>ETL</li>
-					</ul>
-					<footer>
-						<a class="link-pill" href="https://github.com/Loza-Tadesse/CovidProject" target="_blank" rel="noopener">GitHub</a>
-					</footer>
-				</article>
-
-				<article class="project-card">
-					<header>
-						<p class="project-label">Data Storytelling</p>
-						<h3>COVID-19 Tableau Atlas</h3>
-					</header>
-					<p>Interactive dashboard revealing infection progression, income disparities, and vaccination cadence with globe-to-city drilldowns.</p>
-					<ul class="token-list">
-						<li>Tableau</li>
-						<li>Visual Analytics</li>
-					</ul>
-					<footer>
-						<a class="link-pill" href="https://public.tableau.com/app/profile/loza.mulugeta.tadesse/viz/CovidDashboard_16777290398200/Dashboard1?publish=yes" target="_blank" rel="noopener">View dashboard</a>
-					</footer>
-				</article>
-
-				<article class="project-card">
-					<header>
-						<p class="project-label">Data Engineering</p>
-						<h3>Housing Cleanup Pipeline</h3>
-					</header>
-					<p>Automated routines for deduplication, schema normalization, and quality auditing so analysts can model without firefights.</p>
-					<ul class="token-list">
-						<li>SQL</li>
-						<li>DBT</li>
-						<li>Data Quality</li>
-					</ul>
-					<footer>
-						<a class="link-pill" href="https://github.com/Loza-Tadesse/HousingProject" target="_blank" rel="noopener">GitHub</a>
-					</footer>
-				</article>
-
-				<article class="project-card">
-					<header>
-						<p class="project-label">Product Systems</p>
-						<h3>MiniBus Routing</h3>
-					</header>
-					<p>Optimizes campus shuttle routes with demand-responsive scheduling, reducing wait times while tracking fleet health in real time.</p>
-					<ul class="token-list">
-						<li>Python</li>
-						<li>Systems Design</li>
-						<li>Agile Delivery</li>
-					</ul>
-					<footer>
-						<a class="link-pill" href="https://github.com/Loza-Tadesse/Mini-Bus-TRansporttion-System" target="_blank" rel="noopener">GitHub</a>
-					</footer>
-				</article>
+			<div class="project-carousel" data-carousel aria-label="Project showcase">
+				<button class="carousel-control prev" type="button" data-prev aria-label="Show previous project">
+					<span aria-hidden="true">&#x2039;</span>
+				</button>
+				<div class="project-viewport">
+					<div class="project-track" data-track>
+						<article class="project-slide" id="project-slide-0" data-slide>
+							<figure class="project-visual">
+								<img src="images/pic01.jpg" alt="Ragify study companion interface mockup" loading="lazy" />
+							</figure>
+							<div class="project-content">
+								<p class="project-label">RAG &amp; LLM</p>
+								<h3>Ragify · Study Companion</h3>
+								<p class="project-description">Uploads any syllabus PDF, builds a dense vector index, and delivers conversational answers with source grounding inside a minimal chat interface.</p>
+								<ul class="token-list">
+									<li>Python</li>
+									<li>LangChain</li>
+									<li>ChromaDB</li>
+									<li>OpenAI API</li>
+								</ul>
+								<span class="status-tag">Case study in progress</span>
+								<div class="project-links">
+									<a class="link-pill is-disabled" href="#" aria-disabled="true">Private beta</a>
+									<a class="link-pill is-disabled" href="#" aria-disabled="true">GitHub private</a>
+								</div>
+							</div>
+						</article>
+						<article class="project-slide" id="project-slide-1" data-slide>
+							<figure class="project-visual">
+								<img src="images/pic02.jpg" alt="SolPredict AI dashboard concept" loading="lazy" />
+							</figure>
+							<div class="project-content">
+								<p class="project-label">Forecasting</p>
+								<h3>SolPredict AI</h3>
+								<p class="project-description">Hybrid architecture blending engineered alpha factors with sequential LSTM layers to predict Solana price direction with calibrated confidence bands.</p>
+								<ul class="token-list">
+									<li>TensorFlow</li>
+									<li>scikit-learn</li>
+									<li>Pandas</li>
+									<li>Airflow</li>
+								</ul>
+								<span class="status-tag">Model tuning underway</span>
+								<div class="project-links">
+									<a class="link-pill is-disabled" href="#" aria-disabled="true">Signal API coming soon</a>
+									<a class="link-pill is-disabled" href="#" aria-disabled="true">GitHub private</a>
+								</div>
+							</div>
+						</article>
+						<article class="project-slide" id="project-slide-2" data-slide>
+							<figure class="project-visual">
+								<img src="images/pic03.jpg" alt="HotSpot predictor heatmap visualization" loading="lazy" />
+							</figure>
+							<div class="project-content">
+								<p class="project-label">Predictive Analytics</p>
+								<h3>HotSpot-Predictor</h3>
+								<p class="project-description">Combines location intelligence, mobility signals, and anonymized POS data to surface venues primed to become nightlife hotspots before demand peaks.</p>
+								<ul class="token-list">
+									<li>Python</li>
+									<li>scikit-learn</li>
+									<li>Feature Stores</li>
+								</ul>
+								<span class="status-tag">GitHub repo private</span>
+								<div class="project-links">
+									<a class="link-pill is-disabled" href="#" aria-disabled="true">Pilot dashboard coming soon</a>
+									<a class="link-pill is-disabled" href="#" aria-disabled="true">GitHub private</a>
+								</div>
+							</div>
+						</article>
+						<article class="project-slide" id="project-slide-3" data-slide>
+							<figure class="project-visual">
+								<img src="images/covid-19-world-map.webp" alt="COVID-19 global data visualization" loading="lazy" />
+							</figure>
+							<div class="project-content">
+								<p class="project-label">Exploration</p>
+								<h3>COVID-19 Global Data</h3>
+								<p class="project-description">SQL exploration quantifying infection velocity, mortality deltas, and demographic risk to advise public health outreach.</p>
+								<ul class="token-list">
+									<li>SQL</li>
+									<li>Data Modeling</li>
+									<li>ETL</li>
+								</ul>
+								<div class="project-links">
+									<a class="link-pill" href="https://github.com/Loza-Tadesse/CovidProject" target="_blank" rel="noopener">View analysis</a>
+									<a class="link-pill" href="https://github.com/Loza-Tadesse/CovidProject" target="_blank" rel="noopener">GitHub</a>
+								</div>
+							</div>
+						</article>
+						<article class="project-slide" id="project-slide-4" data-slide>
+							<figure class="project-visual">
+								<img src="images/TableauCovidDone.png" alt="COVID-19 Tableau atlas dashboard preview" loading="lazy" />
+							</figure>
+							<div class="project-content">
+								<p class="project-label">Data Storytelling</p>
+								<h3>COVID-19 Tableau Atlas</h3>
+								<p class="project-description">Interactive dashboard revealing infection progression, income disparities, and vaccination cadence with globe-to-city drilldowns.</p>
+								<ul class="token-list">
+									<li>Tableau</li>
+									<li>Visual Analytics</li>
+								</ul>
+								<div class="project-links">
+									<a class="link-pill" href="https://public.tableau.com/app/profile/loza.mulugeta.tadesse/viz/CovidDashboard_16777290398200/Dashboard1?publish=yes" target="_blank" rel="noopener">View dashboard</a>
+									<a class="link-pill is-disabled" href="#" aria-disabled="true">GitHub private</a>
+								</div>
+							</div>
+						</article>
+						<article class="project-slide" id="project-slide-5" data-slide>
+							<figure class="project-visual">
+								<img src="images/housing.webp" alt="Housing data pipeline quality checks illustration" loading="lazy" />
+							</figure>
+							<div class="project-content">
+								<p class="project-label">Data Engineering</p>
+								<h3>Housing Cleanup Pipeline</h3>
+								<p class="project-description">Automated routines for deduplication, schema normalization, and quality auditing so analysts can model without firefights.</p>
+								<ul class="token-list">
+									<li>SQL</li>
+									<li>DBT</li>
+									<li>Data Quality</li>
+								</ul>
+								<div class="project-links">
+									<a class="link-pill is-disabled" href="#" aria-disabled="true">Ops runbook coming soon</a>
+									<a class="link-pill" href="https://github.com/Loza-Tadesse/HousingProject" target="_blank" rel="noopener">GitHub</a>
+								</div>
+							</div>
+						</article>
+						<article class="project-slide" id="project-slide-6" data-slide>
+							<figure class="project-visual">
+								<img src="images/Diagram-of-real-time-on-Campus-Public-Transportation-Monitoring-System.jpg" alt="Mini bus routing control center mockup" loading="lazy" />
+							</figure>
+							<div class="project-content">
+								<p class="project-label">Product Systems</p>
+								<h3>MiniBus Routing</h3>
+								<p class="project-description">Optimizes campus shuttle routes with demand-responsive scheduling, reducing wait times while tracking fleet health in real time.</p>
+								<ul class="token-list">
+									<li>Python</li>
+									<li>Systems Design</li>
+									<li>Agile Delivery</li>
+								</ul>
+								<div class="project-links">
+									<a class="link-pill is-disabled" href="#" aria-disabled="true">Dispatch console coming soon</a>
+									<a class="link-pill" href="https://github.com/Loza-Tadesse/Mini-Bus-TRansporttion-System" target="_blank" rel="noopener">GitHub</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				<button class="carousel-control next" type="button" data-next aria-label="Show next project">
+					<span aria-hidden="true">&#x203A;</span>
+				</button>
+				<div class="carousel-dots" role="tablist">
+					<button class="carousel-dot is-active" type="button" data-dot data-index="0" aria-label="Ragify · Study Companion" aria-controls="project-slide-0" role="tab" aria-selected="true"></button>
+					<button class="carousel-dot" type="button" data-dot data-index="1" aria-label="SolPredict AI" aria-controls="project-slide-1" role="tab" aria-selected="false"></button>
+					<button class="carousel-dot" type="button" data-dot data-index="2" aria-label="HotSpot-Predictor" aria-controls="project-slide-2" role="tab" aria-selected="false"></button>
+					<button class="carousel-dot" type="button" data-dot data-index="3" aria-label="COVID-19 Global Data" aria-controls="project-slide-3" role="tab" aria-selected="false"></button>
+					<button class="carousel-dot" type="button" data-dot data-index="4" aria-label="COVID-19 Tableau Atlas" aria-controls="project-slide-4" role="tab" aria-selected="false"></button>
+					<button class="carousel-dot" type="button" data-dot data-index="5" aria-label="Housing Cleanup Pipeline" aria-controls="project-slide-5" role="tab" aria-selected="false"></button>
+					<button class="carousel-dot" type="button" data-dot data-index="6" aria-label="MiniBus Routing" aria-controls="project-slide-6" role="tab" aria-selected="false"></button>
+				</div>
 			</div>
 		</section>
 
