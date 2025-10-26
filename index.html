@@ -4,7 +4,7 @@
 	<title>Loza Tadesse · Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="My mission is to turn data lakes into lightbulb moments with elegant, resilient, and insightful data science." />
+	<meta name="description" content="I turn complex data into actionable insights. I build robust, production-ready models and clear visualizations that help teams make confident decisions." />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
@@ -15,16 +15,17 @@
 	<main class="page">
 		<section class="intro" id="about">
 			<div class="intro-card">
-				<p class="eyebrow">Hey, I’m Loza</p>
-				<h2>I make data do things it didn't know it could do.</h2>
-				<p class="intro-copy">My mission is to turn data lakes into lightbulb moments. I’m a Data Scientist who believes that every data point is a piece of a compelling story, it just needs the right algorithm and the right visualization to be told. I'm fascinated by everything from time-series forecasting to NLP model deployment, and I approach every project with the goal of creating something elegant, resilient, and insightful. Outside of work I enjoy painting and exercising.</p>
+				<p class="eyebrow">Hey, I’m Loza Tadesse</p>
+				<h2>I transform complex datasets into clear, actionable insight.</h2>
+				<p class="intro-copy">My work focuses on converting large scale data into reliable, interpretable products. I design and deploy end-to-end solutions spanning time-series forecasting, natural language processing, and model deployment. I prioritize robustness, clarity, and reproducibility in every project. Outside of work, I enjoy painting and staying active through regular exercise.</p>
 			</div>
 		</section>
 
 		<section class="projects" id="projects" aria-labelledby="projects-title">
 			<header class="section-header">
 				<p class="section-label">Projects</p>
-				<h3 id="projects-title">Here are some of my favorite projects</h3>
+				<h3 id="projects-title">Selected projects</h3>
+				<p>End-to-end work across forecasting, natural language processing, and interactive ML applications. Each project focuses on reliability, performance, and clear communication of results.</p>
 			</header>
 			<div class="project-carousel" data-carousel aria-label="Project gallery">
 				<button class="carousel-nav prev" type="button" data-prev aria-label="Previous project">
@@ -39,7 +40,7 @@
 							<div class="project-body">
 								<p class="project-tag">Forecasting</p>
 								<h3>Arlington Parking Predict</h3>
-								<p>I live in Arlington and despise circling for parking. This time-series sidekick tells me where the open spots will be before I even grab my keys.</p>
+								<p>This project forecasts hourly parking occupancy at the street level in Arlington, VA. It uses LightGBM with a Poisson objective over engineered temporal and categorical features, and provides an interactive Streamlit dashboard.</p>
 								<ul class="tech-list">
 									<li>LightGBM</li>
 									<li>Poisson Regression</li>
@@ -53,26 +54,6 @@
 								</div>
 							</div>
 						</article>
-						<article class="project-card" data-slide aria-hidden="true" id="project-slide-1">
-							<figure class="project-media">
-								<img src="images/askmyrag.svg" alt="Illustration of AskMyRAG chat assistant with documents feeding into responses" loading="lazy" />
-							</figure>
-							<div class="project-body">
-								<p class="project-tag">Generative AI</p>
-								<h3>AskMyRAG Study Companion</h3>
-								<p>I built this because I hate studying. Now my notes answer back with citations, sass, and zero sympathy for procrastination.</p>
-								<ul class="tech-list">
-									<li>LLama</li>
-									<li>Embedding Models</li>
-									<li>LLMs</li>
-									<li>Retrieval-Augmented Generation</li>
-								</ul>
-								<div class="project-links">
-									<a class="btn" href="https://askmyrag.streamlit.app/" target="_blank" rel="noopener">Launch app</a>
-									<a class="btn ghost" href="https://github.com/Loza-Tadesse/RAGify" target="_blank" rel="noopener">GitHub</a>
-								</div>
-							</div>
-						</article>
 						<article class="project-card" data-slide aria-hidden="true" id="project-slide-2">
 							<figure class="project-media">
 								<img src="images/solpredict.svg" alt="Illustration of SolPredict AI trading forecast" loading="lazy" />
@@ -80,7 +61,7 @@
 							<div class="project-body">
 								<p class="project-tag">Time Series</p>
 								<h3>SolPredict AI</h3>
-								<p>I created this for my boyfriend who kept losing money on crypto. Now the SGD Regressor nags him before the market does.</p>
+								<p>Real time minute level Solana price forecasts using online linear learners (SGD, Passive‑Aggressive, River) and rich technical features (SMA, EMA, MACD, RSI...). Models refresh each minute with incremental updates; live metrics track accuracy.</p>
 								<ul class="tech-list">
 									<li>SGD Regressor</li>
 									<li>Passive-Aggressive Regressor</li>
@@ -92,6 +73,26 @@
 								<div class="project-links">
 									<a class="btn" href="https://solanapredictv2.streamlit.app/" target="_blank" rel="noopener">Launch app</a>
 									<a class="btn ghost" href="https://github.com/Loza-Tadesse/SolPredict-AI" target="_blank" rel="noopener">GitHub</a>
+								</div>
+							</div>
+						</article>
+						<article class="project-card" data-slide aria-hidden="true" id="project-slide-1">
+							<figure class="project-media">
+								<img src="images/askmyrag.svg" alt="Illustration of AskMyRAG chat assistant with documents feeding into responses" loading="lazy" />
+							</figure>
+							<div class="project-body">
+								<p class="project-tag">Generative AI</p>
+								<h3>AskMyRAG Study Companion</h3>
+								<p>Retrieval‑augmented question answering over personal notes. Indexes documents, retrieves grounded context, and generates cited responses with controllable prompts and safe defaults.</p>
+								<ul class="tech-list">
+									<li>Llama</li>
+									<li>Embeddings</li>
+									<li>LLMs</li>
+									<li>RAG</li>
+								</ul>
+								<div class="project-links">
+									<a class="btn" href="https://askmyrag.streamlit.app/" target="_blank" rel="noopener">Launch app</a>
+									<a class="btn ghost" href="https://github.com/Loza-Tadesse/RAGify" target="_blank" rel="noopener">GitHub</a>
 								</div>
 							</div>
 						</article>
@@ -111,7 +112,7 @@
 		<section class="education" id="education" aria-labelledby="education-title">
 			<header class="section-header">
 				<p class="section-label">Education &amp; Certifications</p>
-				<h3 id="education-title">Roots that keep the experiments grounded</h3>
+				<h3 id="education-title">Education and certifications</h3>
 			</header>
 			<div class="education-grid">
 				<article>
